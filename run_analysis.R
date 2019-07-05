@@ -63,4 +63,4 @@ averageTidyData <- tidyData %>%
         group_by(activity, subject)%>%
         summarise_all(funs(mean))
 
-write.table(averageTidyData, "TidyData.txt")
+write.table(averageTidyData, "TidyData.txt", row.name=FALSE)
