@@ -8,27 +8,24 @@ The function *run_analysis.R* loads and tidy data collected from the acceleromet
 The variables of this script are the following:
 
 * Directories
-
-        * **dirData**: (*chr*) Char vector containing the path to the "data" directory. 
-        * **dirTrain**: (*chr*) Char vector containing the path to the "data/train" directory.
-        * **dirTest**: (*chr*) Char vector containing the path to the "data/test" directory.
+  * **dirData**: (*chr*) Char vector containing the path to the "data" directory. 
+  * **dirTrain**: (*chr*) Char vector containing the path to the "data/train" directory.
+  * **dirTest**: (*chr*) Char vector containing the path to the "data/test" directory.
 
 * Raw datasets
-
-        * **features**: (*data.frame*, 561 obs. of 2 variables). Raw data.frame containing the names of the variables of the datasets, obtained after reading the file "./data/features.txt".
-        * **activities**: (*data.frame*, 6 obs. of 2 variables). Raw data.frame containing the names and labels of the activities performed in the experiment, obtained after reading the file "./data/activity_labels.txt".
-        * **xTrain**: (*data.frame*, 7532 obs. of 561 variables). Raw data.frame containing the values for the variables, obtained after reading the file "./data/train/X_train.txt".
-        * **yTrain**: (*data.frame*, 7532 obs. of 1 variable). Raw data.frame containing the labels for the activities performed in the train dataset, obtained after reading the file "./data/train/Y_train.txt".
-        * **subjectTrain**: (*data.frame*, 7532 obs. of 1 variable). Raw data.frame containing the code of the subject performing the experiments, obtained after reading the file "./data/train/subject_train.txt".
-        * **xTest**: (*data.frame*, 2947 obs. of 561 variables). Raw data.frame containing the values for the variables, obtained after reading the file "./data/test/Y_test.txt".
-        * **yTest**: (*data.frame*, 2947 obs. of 1 variable). Raw data.frame containing the labels for the activities performed in the test dataset, obtained after reading the file "./data/test/Y_test.txt".
-        * **subjectTest**: (*data.frame*, 2947 obs. of 1 variable). Raw data.frame containing the code of the subject performing the experiments, obtained after reading the file "./data/test/subject_test.txt".
+  * **features**: (*data.frame*, 561 obs. of 2 variables). Raw data.frame containing the names of the variables of the datasets, obtained after reading the file "./data/features.txt".
+  * **activities**: (*data.frame*, 6 obs. of 2 variables). Raw data.frame containing the names and labels of the activities performed in the experiment, obtained after reading the file "./data/activity_labels.txt".
+  * **xTrain**: (*data.frame*, 7532 obs. of 561 variables). Raw data.frame containing the values for the variables, obtained after reading the file "./data/train/X_train.txt".
+  * **yTrain**: (*data.frame*, 7532 obs. of 1 variable). Raw data.frame containing the labels for the activities performed in the train dataset, obtained after reading the file "./data/train/Y_train.txt".
+  * **subjectTrain**: (*data.frame*, 7532 obs. of 1 variable). Raw data.frame containing the code of the subject performing the experiments, obtained after reading the file "./data/train/subject_train.txt".
+  * **xTest**: (*data.frame*, 2947 obs. of 561 variables). Raw data.frame containing the values for the variables, obtained after reading the file "./data/test/Y_test.txt".
+  * **yTest**: (*data.frame*, 2947 obs. of 1 variable). Raw data.frame containing the labels for the activities performed in the test dataset, obtained after reading the file "./data/test/Y_test.txt".
+  * **subjectTest**: (*data.frame*, 2947 obs. of 1 variable). Raw data.frame containing the code of the subject performing the experiments, obtained after reading the file "./data/test/subject_test.txt".
 
 * Processed variables
-        
-        * **data**: (*data.frame*, 10299 obs. of 68 variables) Processed data.frame result of merging all the train and test datasets and selecting only the variables containing the mean or the standard deviation.
-        * **tidyData**: (*tibble*, 10299 obs. of 68 variables) Data.frame table of the "data".
-        * **averageTidyData**: (*tibble*, 180 obs. of 68 variables) Tidy data set with the average of each variable for each activity and each subject.
+  * **data**: (*data.frame*, 10299 obs. of 68 variables) Processed data.frame result of merging all the train and test datasets and selecting only the variables containing the mean or the standard deviation.
+  * **tidyData**: (*tibble*, 10299 obs. of 68 variables) Data.frame table of the "data".
+  * **averageTidyData**: (*tibble*, 180 obs. of 68 variables) Tidy data set with the average of each variable for each activity and each subject.
 
 ## Transformations
 
